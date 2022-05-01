@@ -11,18 +11,62 @@
         <p>Return to <a href="../index.html">My Portfolio</a></p>
         <h3>Notes:</h3>
         <p>
-            -Empty-
+            There is an interesting difference between JavaScript and other programming languages.
+            There is not a differentiation between floats and integers. They are just numbers.
         </p>
         <h3>Questions:</h3>
         <ul>
             <li>
-                -Empty-
+                What is a symbol type? I don't understand the purpose of a symbol as a primitive type.
+            </li>
+            <li>
+                Bitwise operators are confusing. I need to find more resources that will allow me to 
+                wrap my head around these.
             </li>
         </ul>
         <h3>Exercises:</h3>
         <ul>
-            <li>-Empty-</li>
+            <li>Refresh this page for exercise prompts.</li>
         </ul>
+        <script>
+            const quiz = [
+                ["What is Superman's real name?","Clark Kent"],
+                ["What is Wonder Woman's real name?","Diana Prince"],
+                ["What is Batman's real name?","Bruce Wayne"]
+            ];
+
+            function start(quiz){
+                let score = 0;
+
+                // main game loop
+                for(const [question,answer] of quiz){
+                    const response = ask(question);
+                    check(response,answer);
+                }
+                // end of main game loop
+
+                gameOver();
+
+                // function declarations
+                function ask(question){
+                    return prompt(question);
+                }
+
+                function check(response,answer){
+                    if(response === answer){
+                        alert('Correct!');
+                        score++;
+                    } else {
+                        alert(`Wrong! The correct answer was ${answer}`);
+                        }
+                    }
+
+                function gameOver(){
+                    alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
+                }
+            }
+            start(quiz);
+        </script>
         <h3>Team Activity:</h3>
         <ul>
             <li><a href="team.html">Team Activity</a></li>
