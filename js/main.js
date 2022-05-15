@@ -10,6 +10,10 @@ const links = [
     {
       label: "Week 03",
       url: "week-03/index.html"
+    },
+    {
+      label: "Week 04",
+      url: "week-04/index.html"
     }
   ]
 
@@ -18,10 +22,13 @@ const links = [
 
       links.forEach( link => {
           const li = document.createElement("li");
+          const img = document.createElement("img");
           const href = document.createElement("a");
+          img.setAttribute("src", "images/file-icon.png");
           href.setAttribute("href", link.url);
           href.innerText = link.label;
 
+          href.appendChild(img);
           li.appendChild(href);
           ol.appendChild(li);
       })
