@@ -119,6 +119,7 @@ const view = {
 /* Additional code added from Chapter 5. */
 const game = {
     start(quiz){
+        console.log('start() invoked');
         // view.hide(view.start);
         this.questions = [...quiz];
         this.score = 0;
@@ -132,6 +133,7 @@ const game = {
         // this.gameOver();
     },
     ask(){
+        console.log('ask() invoked');
         // const question = `What is ${this.question.name}'s real name?`;
         // view.render(view.question,question);
         // const response =  prompt(question);
@@ -146,6 +148,7 @@ const game = {
         }
     },
     check(event){
+        console.log('check(event) invoked');
         // const answer = this.question.realName;
         // if(response === answer){
         // view.render(view.result,'Correct!',{'class':'correct'});
@@ -170,6 +173,7 @@ const game = {
         this.ask();
     },
     gameOver(){
+        console.log('gameOver() invoked');
         // view.show(view.start);
         view.render(view.info,`Game Over, you scored ${this.score} point${this.score !== 1 ? 's' : ''}`);
         view.teardown();
