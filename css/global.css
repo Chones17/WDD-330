@@ -1,0 +1,40 @@
+/*----------------- Global Body Styles --------------------*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 200px;
+    margin: 0;
+}
+
+header,
+footer {
+    display: grid;
+    color: white;
+    padding: 0 20px;
+}
+
+h1,
+footer p {
+    margin: auto;
+    text-align: center;
+}
+
+/*---------------- Global Header Styles -------------------*/
+
+header {
+    background-color: black;
+}
+
+/*----------------- Global Main Styles --------------------*/
+
+main {
+    display: grid;
+    padding: 20px;
+}
+
+/*---------------- Global Footer Styles -------------------*/
+
+footer {
+    background-color: grey;
+}

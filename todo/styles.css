@@ -1,0 +1,42 @@
+body {
+    background-color: grey; /*Remove*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0px;
+    justify-items: center;
+    font-family: sans-serif;
+}
+
+header,
+main,
+footer {
+    width: 90vw;
+    height: 100px;
+}
+
+header {
+    background-color: red; /*Remove*/
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white; /*Remove*/
+    height: auto;
+}
+
+footer {
+    background-color: blue; /*Remove*/
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 444px) {
+    header,
+    main,
+    footer {
+        width: 400px;
+    }
+}

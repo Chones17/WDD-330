@@ -1,0 +1,48 @@
+/*-------------------- Import CSS -----------------------*/
+
+@import '../css/global.css';
+
+/*----------------- Secondary Styles --------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+}
+
+section {
+    width: 75vw;
+    margin: auto;
+}
+
+section:first-child h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section:first-child a {
+    display: grid;
+    grid-template-columns: auto;
+    text-decoration: none;
+    text-align: center;
+    justify-items: center;
+    color: black;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 20px 0;
+    max-width: 300px;
+}
+
+section:first-child a:hover {
+    box-shadow: 10px 10px 50px grey;
+    border-radius: 10px;
+}
+
+section:first-child a img {
+    max-width: 200px;
+}
+
+li {
+    padding-bottom: 20px;
+}

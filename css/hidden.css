@@ -1,0 +1,11 @@
+/*-------------------- Import CSS -----------------------*/
+
+@import '../css/secondary.css';
+
+/*----------------- Hidden Elements ---------------------*/
+
+section:nth-child(2),
+section:nth-child(3),
+section:nth-child(5) {
+    display: none;
+}
