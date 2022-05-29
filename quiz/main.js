@@ -1,8 +1,17 @@
-/* Code added from Chapter 5. */
+/* Array of Superhero names and real names. */
 const quiz = [
-    { name: "Superman",realName: "Clark Kent" },
-    { name: "Wonder Woman",realName: "Diana Prince" },
-    { name: "Batman",realName: "Bruce Wayne" },
+    { 
+        name: "Superman", 
+        realName: "Clark Kent" 
+    },
+    { 
+        name: "Wonder Woman", 
+        realName: "Diana Prince" 
+    },
+    { 
+        name: "Batman", 
+        realName: "Bruce Wayne" 
+    },
 ];
 
 /* Code added from Chapter 6. */
@@ -13,7 +22,7 @@ const view = {
     info: document.getElementById('info'),
     start: document.getElementById('start'),
     response: document.querySelector('#response'),
-    render(target,content,attributes) {
+    render(target, content, attributes) {
         for(const key in attributes) {
             target.setAttribute(key, attributes[key]);
         }
@@ -89,5 +98,5 @@ const game = {
 }
 
 /* Code added from Chapter 8. */
-view.response.addEventListener('submit', (event) => game.check(event), false);
-view.hide(view.response);
+//view.response.addEventListener('submit', (event) => game.check(event), false);
+//view.hide(view.response);

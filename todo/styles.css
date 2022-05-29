@@ -1,5 +1,6 @@
+/*-----------------------Main Styles------------------------*/
+
 body {
-    background-color: grey; /*Remove*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -16,7 +17,6 @@ footer {
 }
 
 header {
-    background-color: red; /*Remove*/
     margin-top: 40px;
     display: grid;
     justify-content: center;
@@ -24,14 +24,72 @@ header {
 }
 
 main {
-    background-color: white; /*Remove*/
     height: auto;
 }
 
 footer {
-    background-color: blue; /*Remove*/
     margin-bottom: 40px;
 }
+
+/*-----------------------List Styles-------------------------*/
+
+main ul {
+    display: grid;
+    grid-template-columns: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+}
+
+main li {
+    display: grid;
+    grid-template-columns: auto 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+main li div {
+    transform: rotate(45deg);
+    text-align: center;
+}
+
+main ul:last-child {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+main ul:last-child li {
+    grid-template-columns: auto;
+    border-right: none;
+    border-left: none;    
+    border-bottom: 1px solid black;
+}
+
+main ul:last-child li:first-child {
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+main ul:last-child li:last-child {
+    border-right: 1px solid black;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+footer li {
+    display: grid;
+}
+
+/*-----------------------Media Queries-----------------------*/
 
 @media screen and (min-width: 444px) {
     header,
