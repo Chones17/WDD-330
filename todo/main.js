@@ -31,19 +31,6 @@ function addElement() {
     });
 }    
 
-
-/* Delete task from list */
-// function deleteTask(content) {
-//     for (let i=0; i < todo.length; i++) {
-//         if (todo[i].content === content) {
-//             todo.splice(i, 1);
-//             deleteItem[i].onclick = () => {
-//                 this.target.remove();
-//             }
-//         }
-//     }
-// }
-
 /* Task List Count */
 window.addEventListener('click', () => {
     const length = toDoList.length + ' task(s) left';
@@ -57,8 +44,8 @@ function removeElement() {
         close[i].addEventListener('click', (event) => {
             toDoList.forEach((element) => {
                 if(event.target.parentElement.id === element.content) {
-                    toDoList.splice(i, 1);
-                    close[i].parentElement.remove();
+                    toDoList.splice(toDoList.indexOf(element), 1);
+                    event.target.parentElement.remove();
                 }
             });
         });
