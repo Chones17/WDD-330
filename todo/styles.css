@@ -43,14 +43,15 @@ main ul {
 
 main li {
     display: grid;
-    grid-template-columns: auto 30px;
+    grid-template-columns: 30px auto 30px;
+    align-items: center;
     padding: 10px;
     border: 1px solid black;
     border-bottom: none;
 }
 
-main li span {
-    text-align: center;
+main li input:checked + label {
+    text-decoration: line-through;
 }
 
 main ul:last-child {
@@ -77,24 +78,20 @@ main ul:last-child li:last-child {
 }
 
 footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
     display: grid;
     grid-template-columns: auto 40px;
-    list-style-type: none;
     height: 40px;
     margin: 0;
     padding: 10px;
 }
 
-footer li {
-    display: grid;
-    font-size: 1.5em;
-}
-
-footer li:last-child {
-    width: 100%;
-    justify-items: center;
-    align-content: center;
-    border: 1px solid black;
+footer ul li input {
+    font-size: 1em;
 }
 
 /*-----------------------Media Queries-----------------------*/

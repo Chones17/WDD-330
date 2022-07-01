@@ -18,19 +18,20 @@ export default class storage {
         // Return toDoList with toDo data.
         const list = localStorage.getItem(input);
         return JSON.parse(list);
+
     }
 
     /* Get Length of localStorage */
     getLength() {
 
-        /* Return length of localStorage */
+        // Return length of localStorage.
         return localStorage.length;
     }
 
     /* Remove list item */
     removeToDo(input) {
 
-        /* Remove list item */
+        // Remove list item.
         localStorage.removeItem(input);
     }
 }
