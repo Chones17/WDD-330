@@ -14,7 +14,6 @@ const quiz = [
     },
 ];
 
-/* Code added from Chapter 6. */
 const view = {
     score: document.querySelector('#score strong'),
     question: document.getElementById('question'),
@@ -53,9 +52,8 @@ const view = {
         this.hide(this.response);
         this.show(this.start);
     }
-};
+}
 
-/* Additional code added from Chapter 5. */
 const game = {
     start(quiz){
         console.log('start() invoked');
@@ -97,6 +95,6 @@ const game = {
     }
 }
 
-/* Code added from Chapter 8. */
-//view.response.addEventListener('submit', (event) => game.check(event), false);
-//view.hide(view.response);
+console.log(view.setup);
+// view.response.addEventListener('submit', (event) => game.check(event), false);
+// view.hide(view.response);

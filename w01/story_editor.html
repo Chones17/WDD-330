@@ -7,18 +7,18 @@
         <title>Story Writer</title>
         <script>
             function loadStory(){
-                var storyName = document.getElementById("name_input").value;
-                var storyHTML = localStorage.getItem(storyName);
+                const storyName = document.getElementById("name_input").value;
+                const storyHTML = localStorage.getItem(storyName);
                 document.getElementById("story_editor").value = storyHTML;
             }
             function saveStory(){
-                var storyName = document.getElementById("name_input").value;
-                var storyHTML = document.getElementById("story_editor").value;
+                const storyName = document.getElementById("name_input").value;
+                const storyHTML = document.getElementById("story_editor").value;
                 localStorage.setItem(storyName, storyHTML);
             }
             function displayStory(){
-                var storyHTML = document.getElementById("story_editor").value;
-                document.getElementById("story_editor").innerHTML = storyHTML;
+                const storyHTML = document.getElementById("story_editor").value;
+                document.getElementById("story_display").innerHTML = storyHTML;
             }
         </script>
         <style>
@@ -30,8 +30,9 @@
         </style>
     </head>
     <body>
+        <a href="index.html">Return to Week 01</a>
         <h1>Story Editor</h1>
-        Story Name:<input id=name_input></input>
+        Story Name:<input id="name_input"></input>
         <section>
             <button onclick="loadStory()">Find and Edit It</button>
             <button onclick="saveStory()">Save It</button>
@@ -39,5 +40,6 @@
         </section>
         <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
         <section id="story_display"></section>
+
     </body>
     </html>
