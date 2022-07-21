@@ -1,0 +1,37 @@
+/*-------------------- Import CSS -----------------------*/
+
+@import '../css/primary.css';
+@import '../css/secondary.css';
+
+/*----------------- Tertiary Styles ---------------------*/
+
+@keyframes enlarge {
+    from {font-size: 1rem;}
+    to {font-size: 1.1rem;}
+}
+
+li {
+    background-color: black;
+    padding-bottom: 0;
+    display: grid;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+span {
+    color: red;
+    height: 10px;
+    animation-name: enlarge;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+section:nth-child(2) {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+}
