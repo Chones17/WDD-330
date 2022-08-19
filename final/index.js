@@ -26,13 +26,6 @@ separation of concerns, or an architectural philosophy such as MVC.
 
 7. Student makes effective use of CSS transitions/animations in their applications.
 * See (tertiary.css lines 24-31).
-
-*** I have been working toward a 4.0 for the past three years. I need a 95% or higher on 
-this assignment to maintain that 4.0. I believe I have met all of the requirements. However, 
-if any of these requirements have not met the expectation, I am willing to add/redo/replace 
-whatever is needed to meet 95% + ******
-
-*** Thank you for a great semester! ***
 */
 
 /* Imports */
